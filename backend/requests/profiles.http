@@ -1,0 +1,36 @@
+@baseUrl=http://localhost:5000/api/profiles
+
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+     "name": "samuele",
+      "surname":"calabrese",
+      "email": "samuele.samuele@samuele.com",
+      "password":"12345"
+}
+
+###
+
+GET {{baseUrl}}
+
+###
+
+GET {{baseUrl}}/66ec603503202d65c39518e5
+
+
+###
+
+PUT {{baseUrl}}/
+Content-Type: application/json
+
+{
+      "name": "samuele",
+      "username":"calabrese",
+      "email": "samu.samu@samu.it",
+      "password":"12345"
+} 
+
+###
+
+DELETE {{baseUrl}}/66ec648403202d65c39518eb
