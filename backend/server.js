@@ -18,7 +18,7 @@ await mongoose
  
  server.use("/api/profiles", ProfileRouter);
  server.use("/api/auth", authenticationRouter); //rotta per l'autenticazione
-
+server.use("api/prodotti", prodottoVendutoRouter);
 
 server.listen(port, () => {
     console.log('server is on');

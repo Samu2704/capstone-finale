@@ -6,8 +6,8 @@ Content-Type: application/json
 {
     "name": "samuele",
     "surname": "samuele",
-    "email": "samuele@samuele.it",
-    "password": "12345",
+    "email": "samuelecalabrese@samuelecala.com",
+    "password": "12345678910",
     "age": 30,
     "avatar":""
 }
@@ -17,6 +17,6 @@ POST {{baseUrl}}/login
 Content-Type: application/json
  
 {
-      "email": "",
-      "password":""
+      "email": "samuelecalabrese@samuelecala.com",
+      "password":"12345678910"
 } 

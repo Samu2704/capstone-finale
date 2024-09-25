@@ -6,8 +6,8 @@ Content-Type: application/json
 {
      "name": "samuele",
       "surname":"calabrese",
-      "email": "samuele.samuele@samuele.com",
-      "password":"12345"
+      "email": "samuelecala@samuelecala.it",
+      "password":"123456"
 }
 
 ###
@@ -21,7 +21,7 @@ GET {{baseUrl}}/66ec603503202d65c39518e5
 
 ###
 
-PUT {{baseUrl}}/
+PUT {{baseUrl}}/66ec603503202d65c39518e5
 Content-Type: application/json
 
 {
@@ -33,4 +33,4 @@ Content-Type: application/json
 
 ###
 
-DELETE {{baseUrl}}/66ec648403202d65c39518eb
+DELETE {{baseUrl}}/66ec68b910de1eb5af9137f5
