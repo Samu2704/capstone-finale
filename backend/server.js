@@ -4,6 +4,8 @@ import mongoose from 'mongoose';
 import ProfileRouter from "./routes/profileRoutes.js";
 import authenticationRouter from "./routes/authenticationRoutes.js";
 import authorization from "./middleware/authorization.js"
+import prodottoVendutoRouter from "./routes/prodottoVendutoRouter.js"
+
 
 const port = process.env.PORT || 5000;
 const Host = process.env.HOST;
@@ -18,7 +20,7 @@ await mongoose
  
  server.use("/api/profiles", ProfileRouter);
  server.use("/api/auth", authenticationRouter); //rotta per l'autenticazione
-server.use("api/prodotti", prodottoVendutoRouter);
+ server.use("/api", prodottoVendutoRouter); //rotta prodotti venduti
 
 server.listen(port, () => {
     console.log('server is on');

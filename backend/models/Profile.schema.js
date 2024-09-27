@@ -1,4 +1,5 @@
 import { Schema, model } from "mongoose";
+import prodottoVendutoSchema from "./prodottoVenduto.schema.js";
 
 
 const ProfileSchema = new Schema(
@@ -26,6 +27,7 @@ const ProfileSchema = new Schema(
     },
     approved: Boolean,
     verifiedAt: Date,
+    //prodottiVenduti:[prodottoVendutoSchema]
   },
   {
     collection: "profiles",

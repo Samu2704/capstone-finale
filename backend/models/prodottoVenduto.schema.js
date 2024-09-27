@@ -1,7 +1,6 @@
-import { Schema, model } from "mongoose";
+import { Schema, model} from "mongoose";
 
-const prodottoVendutoSchema = new Schema(
-  {
+const prodottoVendutoSchema = new Schema({
   avatar: {
   type: String,
 },
@@ -11,11 +10,12 @@ const prodottoVendutoSchema = new Schema(
   brand: {
   type: String,
 },
+userId: {
+  type: String,
+  required: true,
+},
   },
-  {
-    collection: "prodottiVenduti",
-  })
-
-  const prodottoVenduto = model("prodottoVenduto", prodottoVendutoSchema );
-
+  {collection: "prodottiVenduti"}
+)
+const prodottoVenduto = model("prodottiVenduti",prodottoVendutoSchema)
 export default prodottoVenduto;

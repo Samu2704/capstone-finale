@@ -68,3 +68,20 @@ export const me = async () => {
   const data = await res.json();
   return data;
 };
+
+
+//chiamiamo tutti i prodotti più venduti
+export const getAllprodottiVenduti = async () => {
+  try {
+    const res = await fetch(apiBaseUrl + `/api/prodottiVenduti`, {
+     // headers: {
+       // Authorization: `Bearer ${localStorage.getItem("token")}`,
+      //},
+    });
+    if (!res.ok) throw new Error(res);
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
