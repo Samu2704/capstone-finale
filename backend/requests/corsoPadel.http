@@ -1,0 +1,11 @@
+GET http://localhost:5000/api/corsoPadel
+
+###
+POST http://localhost:5000/api/corsoPadel
+Content-Type: application/json
+
+{
+      "avatar":"https://tse4.mm.bing.net/th?id=OIP.gDuR6Ar9ef1E9bCtPwluswHaIb&pid=Api&P=0&h=180",
+      "price":"50",
+      "descrizioneCorso": "Corso avanzato"
+}

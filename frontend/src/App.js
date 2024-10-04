@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css';
 //import NotFound from './components/pages/NotFound';
 import { UserContextProvider } from './components/contexts/UserContextProvider.jsx';
+import Footer from './components/Footer.jsx';
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <div className='mainContainer'>
       <MyNavBar/>
       <Main/>
+      <Footer/>
       </div>
       </BrowserRouter>
     </UserContextProvider>

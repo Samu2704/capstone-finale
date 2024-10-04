@@ -56,11 +56,11 @@ function Home() {
         <>
             {!token && (
                 <div>
-                    <Button variant="primary" onClick={handleShow}>
+                    <Button variant="primary" className="ms-2 me-2" onClick={handleShow}>
                         Login
                     </Button>
                     or
-                    <Button variant="primary" as={Link} to={'http://localhost:5000/auth/login-google'}>
+                    <Button variant="primary" className="ms-2" as={Link} to={'http://localhost:5000/auth/login-google'}>
                         Login with Google
                     </Button>
                 </div>

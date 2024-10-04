@@ -15,10 +15,22 @@ export const getProdotti =  async (req, res) => {
       const tuttiProdotti = await prodottoVendutoSchema.find({})
       //tuttiProdotti.save(),
       res.send(tuttiProdotti);
-      //console.log(tuttiProdotti)
+     // console.log(tuttiProdotti)
     } catch (err) {
       console.log(err);
       res.send({ message: "get all products ERROR" });
     }
   };
 
+  export const createProdotti =async (req, res) =>{
+    try {
+      const prodVenduti = new prodottoVendutoSchema(req.body);
+      const CreatedprodVenduti = await prodVenduti.save();
+      res.status(201).send(CreatedprodVenduti);
+    } catch (err) {
+      console.log(err);
+      res.status(400).send(err);
+    }
+  }
+
+  

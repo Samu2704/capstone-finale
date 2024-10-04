@@ -1,0 +1,11 @@
+.descr{
+    border-top: solid 1px grey;
+    margin-top: 2rem;
+    border-bottom: solid 1px grey;
+}
+.descr h3{
+    margin-top: 1rem;
+}
+.descr h5{
+    margin-bottom: 2rem;
+}

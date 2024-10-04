@@ -5,8 +5,9 @@ GET http://localhost:5000/api/prodottiVenduti
 POST http://localhost:5000/api/prodottiVenduti
 Content-Type: application/json
 
+
 {
-     "avatar": "",
-      "price":"120",
-      "brand": "babolat",
+      "avatar":"https://sp.yimg.com/ib/th?id=OPEC.%2b%2fSLgTYZN08ODQ474C474&o=5&pid=21.1&w=160&h=105",
+      "price":"180",
+      "brand": "Bullpadel"
 }

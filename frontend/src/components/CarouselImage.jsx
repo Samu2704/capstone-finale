@@ -1,12 +1,12 @@
 import Carousel from 'react-bootstrap/Carousel';
-
+import "./Carouselimage.css"
 
 function CarouselImage () {
   return (
-    <Carousel>
+    <Carousel className='carousel'>
     <Carousel.Item>
       <img
-        className="d-block w-25"
+        className="d-block w-50"
         src="https://tse2.mm.bing.net/th?id=OIP.mHYFPwfI8snmoEgstYVRVgHaE7&pid=Api&P=0&h=180"
         alt="First slide"
       />
@@ -18,7 +18,7 @@ function CarouselImage () {
 
     <Carousel.Item>
       <img
-        className="d-block w-25"
+        className="d-block w-50"
         src="https://tse2.mm.bing.net/th?id=OIP.SrbJG1jwMCSCzCIA3bO92gHaE8&pid=Api&P=0&h=180"
         alt="Second slide"
       />
@@ -30,7 +30,7 @@ function CarouselImage () {
 
     <Carousel.Item>
       <img
-        className="d-block w-25"
+        className="d-block w-50"
         src="https://tse4.mm.bing.net/th?id=OIP.NfMFZZDz8tni5ZY5-p19JAHaE8&pid=Api&P=0&h=180"
         alt="Third slide"
       />

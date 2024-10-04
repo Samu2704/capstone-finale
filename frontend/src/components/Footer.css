@@ -1,0 +1,34 @@
+.footer {
+    margin-top: 1em;
+    margin-bottom: 2rem;
+    
+}
+
+.footer p {
+ color: rgb(127, 120, 120);
+  margin : 0;
+}
+
+.footer p:hover,
+.footer h5:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-text {
+  margin-left: 0.5rem;
+}
+.footer-text h5{
+  margin-bottom: 0;
+}
+.footer-text p{
+  margin-bottom: 1rem;
+}
+
+
+
+@media  (min-width: 320px) and (max-width: 768px) {
+  .footer p {
+    margin: 0.5rem;
+  }
+}

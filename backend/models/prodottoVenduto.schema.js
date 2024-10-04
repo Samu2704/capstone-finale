@@ -12,7 +12,7 @@ const prodottoVendutoSchema = new Schema({
 },
 userId: {
   type: String,
-  required: true,
+  //required: true,
 },
   },
   {collection: "prodottiVenduti"}
