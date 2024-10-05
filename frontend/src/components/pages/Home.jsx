@@ -5,6 +5,7 @@ import { UserContext } from '../contexts/UserContextProvider';
 import { login } from '../../fetchUrls.jsx';
 import MyNavBar from "../MyNavBar";
 import Main from "../Main";
+import "./Home.css"
 
 function Home() {
     const [userId, setUserId] = useState(null);

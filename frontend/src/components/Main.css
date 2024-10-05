@@ -7,3 +7,8 @@ h6{
 p{
   font-weight: 700;  
 }
+ .transform:hover{
+  transform: scale(1.1);
+ }
+
+ 

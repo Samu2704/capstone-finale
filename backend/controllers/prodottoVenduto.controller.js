@@ -1,6 +1,4 @@
-
 import prodottoVendutoSchema from "../models/prodottoVenduto.schema.js";
-
 
 
 export const getProdotti =  async (req, res) => {

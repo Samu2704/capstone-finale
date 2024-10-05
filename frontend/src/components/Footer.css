@@ -25,7 +25,14 @@
   margin-bottom: 1rem;
 }
 
+svg{
+  margin-right: 10px;
+ }
 
+span{
+  color: black;
+  font-weight: 700;
+}
 
 @media  (min-width: 320px) and (max-width: 768px) {
   .footer p {

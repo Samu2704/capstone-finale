@@ -14,6 +14,9 @@ import { useContext, useState } from "react";
 import { UserContext } from "./contexts/UserContextProvider";
 import { Link, useNavigate } from "react-router-dom";
 import { register } from "../fetchUrls";
+import "./MyNavBar.css"
+
+
 
 
 function MyNavBar() {
@@ -76,8 +79,8 @@ const handleLogout = () => {
 };
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container fluid>
+    <Navbar expand="lg" className="bg-info nav ;">
+       <Container fluid className=''>
         <Navbar.Brand href="#">Samuele's Padel Accademy</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
