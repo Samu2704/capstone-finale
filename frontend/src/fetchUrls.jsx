@@ -110,7 +110,7 @@ export const createProdotti = async () => {
 };//CHIEDERE AD ALE FETCH PER METTERE A VIDEO QUESTI BENEDETTI PRODOTTI VENDUTI E QUANDRANTE VICINO E VERIFICARE LOGIN E REGISTER
 
 
-export const getAllcorsiPadel = async () => {
+export const getAllCorsiPadel = async () => {
   try {
     const res = await fetch(apiBaseUrl + `/api/corsoPadel`, {
       // headers: {
@@ -118,8 +118,8 @@ export const getAllcorsiPadel = async () => {
       //},
     });
     if (!res.ok) throw new Error(res);
-    const data = await res.json();
-    return data;
+    const corsoData = await res.json();
+    return corsoData;
   } catch (error) {
     console.log(error);
   }
@@ -139,8 +139,8 @@ export const createCorsoPadel = async () => {
 
     // Verifica se la richiesta è andata a buon fine
     if (response.ok) {
-      const data = await response.json();
-      console.log('corso padel creato con successo:', data);
+      const corsoData = await response.json();
+      console.log('corso padel creato con successo:', corsoData);
     } else {
       console.error('Errore nella creazione del corso');
     }
