@@ -4,8 +4,8 @@ export const getMeUrl = `${apiBaseUrl}/auth/me`;
 export const getProfileUrl = `${apiBaseUrl}/profile`;
 
 
-export const loginUrl = "http://localhost:5000/auth/login";
-export const registerUrl = "http://localhost:5000/auth/register";
+export const loginUrl = "http://localhost:5000/api/auth/login";
+export const registerUrl = "http://localhost:5000/api/auth/register";
 export const meUrl = "http://localhost:5000/auth/me";
 
 export const login = async (formValue) => {
@@ -139,8 +139,8 @@ export const createCorsoPadel = async () => {
 
     // Verifica se la richiesta è andata a buon fine
     if (response.ok) {
-      const corsoData = await response.json();
-      console.log('corso padel creato con successo:', corsoData);
+      const data = await response.json();
+      console.log('corso padel creato con successo:', data);
     } else {
       console.error('Errore nella creazione del corso');
     }

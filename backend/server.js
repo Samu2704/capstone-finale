@@ -15,12 +15,13 @@ const server = express();
 server.use(express.json())
 server.use(cors())
 
+
 await mongoose
     .connect(process.env.MONGODB_CONNECTION_URI)
     .then(() => console.log('connessione al db OK'))
     .catch((err) => console.log(err));
 
- 
+    
  server.use("/api/profiles", ProfileRouter);
  server.use("/api/auth", authenticationRouter); //rotta per l'autenticazione
  server.use("/api", prodottoVendutoRouter);

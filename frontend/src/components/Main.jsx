@@ -58,7 +58,7 @@ function Main() {
 
 
   //CORSI PADELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
-  useEffect(() => {
+useEffect(() => {
     getAllCorsiPadel().then((getAllcorsiPadelDati) => { setCorsoData(getAllcorsiPadelDati); console.log(getAllcorsiPadelDati) });
   }, [token]);
 
@@ -84,10 +84,10 @@ function Main() {
       <Carousel />
       <Container>
         <Row>
-          <Col className="racchette" sm={12} md={4}><h5>Le più richieste</h5>
+          <Col className="racchette" sm={12} md={4}><h5 className="mt-3 mb-5">Le più richieste</h5>
             {data.map(prodotto => <div>
               <div className="d-flex transform ms-2">
-                <img className="mb-2" src={prodotto.avatar} alt="" />
+                <img className="mb-5" src={prodotto.avatar} alt="" />
                 <div> <h6>brand: {prodotto.brand} </h6>
                   <p>price: {prodotto.price} €</p>
                 </div>
@@ -95,7 +95,7 @@ function Main() {
             </div>)}
 
             <div>
-              <button
+              <button className="mt-3 ms-3"
                 onClick={() => setIsFormOpen(!isFormOpen)}
                 style={{ backgroundColor: 'green', color: 'white', padding: '10px 20px', border: 'none', cursor: 'pointer', borderRadius: "15px", marginBottom: "1rem", height: "45px", }}>
                 {isFormOpen ? 'Chiudi Form' : 'Crea la tua racchetta'}
@@ -160,19 +160,19 @@ function Main() {
 
 
 
-          <Col sm={12} md={8}><h5>I nostri corsi</h5>
+          <Col className="" sm={12} md={8}><h5 className="ms-4 mt-3 mb-4">I nostri corsi</h5>
             {corsoData.map(corso => <div>
-              <div className="d-flex transform ms-2">
-                <img className="mb-2" src={corso.avatarCorso} alt="" />
+              <div className="d-flex ms-4 transform ">
+                <img className="mb-4 me-4 ms-3" src={corso.avatar} alt="" />
                 <div> <h6>descrizione corso: {corso.descrizioneCorso} </h6>
-                  <p>price: {corso.priceCorso} €</p>
+                  <p>price: {corso.price} €</p>
                 </div>
               </div>
             </div>)}
 
             <div>
-              <button
-                onClick={() => setIsFormCorsoOpen(!isFormCorsoOpen)}//valutareeeeeeeee
+              <button className="ms-4"
+                onClick={() => setIsFormCorsoOpen(!isFormCorsoOpen)}
                 style={{ backgroundColor: 'green', color: 'white', padding: '10px 20px', border: 'none', cursor: 'pointer', borderRadius: "15px", marginBottom: "1rem", height: "45px", }}>
                 {isFormCorsoOpen ? 'Chiudi Form' : 'Crea il tuo corso'}
               </button>
@@ -216,10 +216,10 @@ function Main() {
 
               {/* Stampa a video i dati inseriti */}
               {productDataCorso && (
-                <div>
+                <div >
                   <h5>Dati Corso Inseriti:</h5>
                   <div className="d-flex mb-2 ms-4">
-                    <img className="me-4" src={productDataCorso.avatarCorso} alt={productDataCorso.avatarCorso} style={{ width: '110px', height: '110px', objectFit: 'cover' }} />
+                    <img className="me-4" src={productDataCorso.avatarCorso} alt={""} style={{ width: '110px', height: '110px', objectFit: 'cover' }} />
                     <div>
                       <h6 className="me-2">Descrizione Corso: {productDataCorso.descrizioneCorso}</h6>
                       <p>Price: {productDataCorso.priceCorso}€</p>
