@@ -87,7 +87,7 @@ useEffect(() => {
           <Col className="racchette" sm={12} md={4}><h5 className="mt-3 mb-5">Le più richieste</h5>
             {data.map(prodotto => <div>
               <div className="d-flex transform ms-2">
-                <img className="mb-5" src={prodotto.avatar} alt="" />
+                <img className="mb-5 me-4" src={prodotto.avatar} alt="" />
                 <div> <h6>brand: {prodotto.brand} </h6>
                   <p>price: {prodotto.price} €</p>
                 </div>
