@@ -98,7 +98,7 @@ useEffect(() => {
               <button className="mt-3 ms-3"
                 onClick={() => setIsFormOpen(!isFormOpen)}
                 style={{ backgroundColor: 'green', color: 'white', padding: '10px 20px', border: 'none', cursor: 'pointer', borderRadius: "15px", marginBottom: "1rem", height: "45px", }}>
-                {isFormOpen ? 'Chiudi Form' : 'Crea la tua racchetta'}
+                {isFormOpen ? 'Chiudi' : 'Crea la tua racchetta'}
               </button>
 
               {isFormOpen && (
@@ -174,7 +174,7 @@ useEffect(() => {
               <button className="ms-4"
                 onClick={() => setIsFormCorsoOpen(!isFormCorsoOpen)}
                 style={{ backgroundColor: 'green', color: 'white', padding: '10px 20px', border: 'none', cursor: 'pointer', borderRadius: "15px", marginBottom: "1rem", height: "45px", }}>
-                {isFormCorsoOpen ? 'Chiudi Form' : 'Crea il tuo corso'}
+                {isFormCorsoOpen ? 'Chiudi' : 'Crea il tuo corso'}
               </button>
 
               {isFormCorsoOpen && (
